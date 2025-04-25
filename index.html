@@ -3,32 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generador de Cuentos Infantiles</title>
+    <title>Nighty Night</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Generador Mágico de Cuentos</h1>
+        <div class="logo-container">
+            <img src="assets/images/owl-logo.webp" alt="Nighty Night Owl" class="logo-owl">
+        </div>
+        <h1>Nighty Night</h1>
         
         <div class="theme-selector">
             <label for="theme">Elige un tema para tu cuento:</label>
             <select id="theme">
-                <option value="magia">Magia ✨</option>
-                <option value="animales">Animales 🐾</option>
-                <option value="aventuras">Aventuras 🗺️</option>
-                <option value="amistad">Amistad 🤝</option>
-                <option value="naturaleza">Naturaleza 🌳</option>
+                <option value="magia">Magia</option>
+                <option value="animales">Animales</option>
+                <option value="aventuras">Aventuras</option>
+                <option value="amistad">Amistad</option>
+                <option value="naturaleza">Naturaleza</option>
             </select>
         </div>
 
-        <button id="generate-btn" class="button">Generar Cuento ✨</button>
+        <button id="generate-btn" class="button">
+            <span class="material-icons-round">auto_stories</span>
+            Generar Cuento
+        </button>
 
         <div class="story-container" id="story-container">
             <div id="story-text" class="story-text">
+                <span class="material-icons-round story-placeholder">menu_book</span>
                 Tu cuento aparecerá aquí...
             </div>
-            <button id="copy-btn" class="button secondary">Copiar Cuento 📋</button>
+            <button id="copy-btn" class="button secondary">
+                <span class="material-icons-round">content_copy</span>
+                Copiar Cuento
+            </button>
         </div>
     </div>
     <script src="script.js"></script>
